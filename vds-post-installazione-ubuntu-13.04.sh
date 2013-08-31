@@ -23,7 +23,7 @@ read sure
 if [[ $sure = "s" ]]
 	then
 		#Installazione software
-		sudo apt-get install -y chromium-browser unity-tweak-tool gimp gimp-plugin-registry imagemagick inkscape openshot cheese vlc audacity easytag filezilla p7zip-full keepassx unrar synaptic  gparted
+		sudo apt-get install -y chromium-browser unity-tweak-tool gimp gimp-plugin-registry imagemagick inkscape openshot cheese vlc audacity easytag filezilla p7zip-full keepassx unrar synaptic  gparted virtualbox-qt
 		echo "* Installazione software preferiti terminata."
 	else 
 		echo "* Installazione software preferiti non riuscita."
