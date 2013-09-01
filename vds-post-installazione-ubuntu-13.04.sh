@@ -38,15 +38,16 @@ read sure
 if [[ $sure = "s" ]]
 	then
 		#Installazione software con repository esterni
-		 echo 'Inserire i programmi da installare nello script'
-		 #
 		#AGGIUNTA REPOSITORY
-		#aggiunta repository pacchetto
-
+		sudo add-apt-repository ppa:jd-team/jdownloader
+		sudo add-apt-repository ppa:noobslab/apps #indicator synapse
+		sudo add-apt-repository ppa:tiheum/equinox #faenza icon
 		#AGGIORNAMENTO
-		#sudo apt-get update
+		sudo apt-get update
 		#INSTALAZIONE
-		#sudo apt-get install nomepacchetto -y
+		sudo apt-get install jdownloader  -y
+		sudo apt-get install indicator-synapse -y
+		sudo apt-get install faenza-icon-theme -y
 		echo "* Installazione software con repository esterni terminata."
 	else 
 		echo "* Installazione software con repository esterni non riuscita."
